@@ -17,31 +17,303 @@
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 60px;
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navbar-icons .icon {
+    color: #555;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.banner-container img {
+  width: 50%;         /* hoặc 600px, 50%, v.v. */
+  height: auto;       /* giúp giữ nguyên tỉ lệ ảnh */
+  display: block;
+  margin: 0 auto;     /* căn giữa ảnh */
+}
+
+.banner {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto 40px auto;
+}
+
+.expertise-section {
+    text-align: center;
+    margin: 60px auto 0 auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expertise-title,.expertise-desc {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expertise-categories {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+}
+ 
+.why-earthly-section {
+    max-width: 1100px;
+    margin: 60px auto 0 auto;
+    padding: 0 20px;
+}
+
+.why-earthly-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+}
+
+.why-earthly-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.why-earthly-text {
+    flex: 1 1 350px;
+    font-size: 15px;
+    color: #222;
+    line-height: 1.7;
+    max-width: 48%;
+    margin-top: 0;
+    text-align: left;
+}
+
+.why-earthly-image {
+    flex: 1 1 320px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.why-earthly-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.instagram-section {
+    max-width: 1100px;
+    margin: 60px auto 0 auto;
+    padding: 0 20px;
+}
+
+.instagram-title {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    letter-spacing: 0.01em;
+}
+
+.instagram-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.instagram-gallery img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+}
+
+/* .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .navbar-links {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.logo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo-img {
     height: 50px;
 }
+
 .navbar-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
+
 .navbar-links a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
+
 .navbar-icons .icon {
     margin-left: 15px;
     color: #555;
     text-decoration: none;
 }
 
+.navbar .navbar-icons {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+} */
+
+/* Thanh tìm kiếm
+.header-search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+}
+.header-search-bar .search-form {
+    width: 550px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.header-search-bar .search-input {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    background: #fff;
+}
+.header-search-bar .search-btn {
+    background: #f7f3f0;
+    border: none;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} */
+
+/* Menu  */
+/* .main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: left; 
+    margin-bottom: 20px;
+    padding-left: 40px; 
+}
+
+.main-menu ul, .navbar-icons {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-menu li a:hover {
+    color: #d63384;
+}
+.navbar-icons {
+    position: absolute;
+    right: 40px;
+    top: 80px; 
+    align-items: center;
+} */
 /* Hero Section */
 .hero {
     background-size: cover;
@@ -50,10 +322,12 @@
     color: white;
     padding: 80px 20px;
 }
+
 .hero h1 {
     font-size: 40px;
     margin-bottom: 10px;
 }
+
 .hero p {
     font-size: 20px;
 }
@@ -130,15 +404,7 @@
     background-color: #218838;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #555;
-}
+
 
 /* Style cho trang đăng nhập */
 .login-container {
@@ -260,4 +526,70 @@
     border: 1px solid red;
     border-radius: 5px;
     text-align: center;
+}
+
+/* Style footer */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #817f7f;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #212529;
+}
+
+
+
+.footer h6 {
+    letter-spacing: 0.05em;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    padding: 3px 0;
+    font-weight: 400;
+}
+
+.footer img {
+    vertical-align: middle;
+    filter: grayscale(0);
+    transition: filter 0.3s ease;
+}
+
+.footer img:hover {
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.footer .list-unstyled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 89px;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer img[alt="Apple Pay"] {
+    width: 28px !important;
+    height: auto;
+}
+
+.footer .list-unstyled li {
+    display: inline-block;
+    text-align: center;
+    min-width: 120px;
 }
